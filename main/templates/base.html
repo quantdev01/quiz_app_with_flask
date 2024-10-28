@@ -15,27 +15,30 @@
     </title>
 </head>
 
-<body>
+<body style="font-family: 'Courier New', Courier, monospace;">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <img src="{{ url_for('static', filename='/images/logo.svg')}}" width="" height="31" alt="">
+            <img src="{{ url_for('static', filename='/images/logo.svg')}}" width="" height="40" alt="">
         </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="ms-auto">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <div class="navbar-nav spacing 10 ms-auto">
+                    <a class="nav-item nav-link active" href="#">How it work?<span class="sr-only"></span></a>
                     <a class="nav-item nav-link" href="#">Features</a>
-                    <a class="nav-item nav-link" href="#">Pricing</a>
-                    <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                    <a class="nav-item nav-link" href="#">About us</a>
+                    <a class="nav-item nav-link" href="#">
+                        <button class="btn btn-outline-warning rounded-0 px-4">Login</button>
+                    </a>
                 </div>
-
             </div>
-
         </div>
+        <br>
     </nav>
-
-
 
     {% block content %}
     {% endblock %}
