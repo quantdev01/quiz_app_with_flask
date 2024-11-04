@@ -1,0 +1,36 @@
+{% block content %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }} " rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="{{ url_for('static', filename='/js/bootstrap.bundle.min.js') }}"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</head>
+<title>
+    Signup
+</title>
+
+<body>
+    <div class="container">
+        <div class="row p-5">
+            <div class="col-md-12 col-xl-6 text-center">
+                <img src="{{ url_for('static', filename='/images/logo.svg')}}" width="" height="100" alt="">
+                <p>Welcome back!<br>Please login/Signup to you account</p>
+                <form action="POST">
+
+                </form>
+            </div>
+            <div class="col-md-12 col-xl-6 text-center">
+                <img src="{{ url_for('static', filename='/images/logo.svg')}}" width="" height="100" alt="">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+{% endblock %}

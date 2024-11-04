@@ -23,32 +23,30 @@ Home
         color: #FCC822;
     }
 </style>
-<div class="row g-0">
-    <div class="col col-md col-lg">
+<div class="row g-0 vh-100">
+    <div class="col-md-12 col-xl-6">
         <div class="jumbotron p-5">
-            <h1 class="display-4 fw-bold">Learn new concepts for each question</h1>
+            <h1 class="display-4 fw-bold">Learn<br> new concepts <br> for each question</h1>
             <br>
             <p class="lead ">We help you prepare for exams and quizes</p>
             <hr class="my-4">
             <p class="lead">
             <div class="row">
-                <div class="col-4 col-md-0 col-lg-0"><a class="btn  btn-lg rounded-0 px-4  box-button1" href="#"
-                        role="button">Start
+                <div class="col-4 col-md-0 col-lg-0"><a class="btn  btn-lg rounded-0 px-4  box-button1"
+                        href="{{ url_for('signup_page') }}" role="button">Start
                         solving</a></div>
-                <div class="col-4 col-md-0 col-lg-0">
-                    <img src="{{ url_for('static', filename='/images/know_more.svg') }}" height="6.86">
+
+                <div class="col-4 col-md-0   col-lg-0"><a href="" class="know-more">
+                        <img src="{{ url_for('static', filename='/images/know_more.svg') }}" height="20">
+                        Know
+                        more</a>
                 </div>
-                <div class="col-4 col-md-0 col-lg-0"><a href="" class="know-more">Know
-                        more</a></div>
             </div>
             </p>
         </div>
     </div>
-    <div class="col col-md col-lg p-5">
-        <h1>hellow</h1>
+    <div class="col-md-12 col-xl-6 p-5 text-left">
+        <img src="{{ url_for('static', filename='/images/landing.svg') }}" class="" height="550 ">
     </div>
-    <div class="w-100"></div>
-    <div class="col px-10">Column </div>
-    <div class="col">col</div>
 </div>
 {% endblock %}
