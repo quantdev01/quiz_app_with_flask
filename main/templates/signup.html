@@ -17,12 +17,44 @@
 <body>
     <div class="container">
         <div class="row p-5">
-            <div class="col-md-12 col-xl-6 text-center">
-                <img src="{{ url_for('static', filename='/images/logo.svg')}}" width="" height="100" alt="">
-                <p>Welcome back!<br>Please login/Signup to you account</p>
+            <div class="col-md-12 col-xl-6">
+                <div class="container text-center">
+                    <img src="{{ url_for('static', filename='/images/logo.svg')}}" width="" height="100" alt="">
+                </div>
+                <p class="text-center">Welcome back!<br>Please login/Signup to you account</p>
                 <form action="POST">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email">
 
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="form-check col-4">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                        </div>
+                        <div class="form-check col-4 text-right">
+                            <label class="form-check-label" for="exampleCheck1">Forgot password?</label>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+
+                        <button class=" col-2 btn btn-outline-warning rounded-0 px-4">Login</button>
+                        <button class="col-2 btn btn-outline-warning rounded-0 px-4 mx-5">Signup</button>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
+
             </div>
             <div class="col-md-12 col-xl-6 text-center">
                 <img src="{{ url_for('static', filename='/images/logo.svg')}}" width="" height="100" alt="">
